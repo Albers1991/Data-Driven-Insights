@@ -28,7 +28,7 @@ try:
     ##################################################################################################################################################################################
     #                                        Google Maps Geocoding API Setup
     ##################################################################################################################################################################################
-    api_key = 'AIzaSyD0gGKRAbAhj1437MJ9e2cN_mXD6JT_-OU'  # My Google Maps Geocoding API key
+    api_key = 'MY_API_KEY'  # My Google Maps Geocoding API key
 
     # Define functions to get latitude and longitude using Google API
     def get_latitude(zip_code):
