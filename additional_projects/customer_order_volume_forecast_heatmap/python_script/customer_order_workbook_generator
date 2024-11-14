@@ -74,7 +74,7 @@ try:
                                      "Non Product Revenue", "City", "State", "Zip Code"])
 
     # Define the path where the script will save the file
-    output_path = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/customer_order_volume_forecast_heatmap/data/customer_orders.xlsx"
+    output_path = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/data/customer_orders.xlsx"
 
     # Ensure the directory exists
     os.makedirs(os.path.dirname(output_path), exist_ok=True)

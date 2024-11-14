@@ -29,7 +29,7 @@ try:
     ##################################################################################################################################################################################
 
     # File path for the Excel file that Geopy will output with the Longitude and Latitude
-    file_path1 = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/customer_order_volume_forecast_heatmap/data/script_output/long_lat_customer_orders.xlsx"
+    file_path1 = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/data/script_output/long_lat_customer_orders.xlsx"
 
     # Load the excel file
     df = pd.read_excel(file_path1)
@@ -40,16 +40,16 @@ try:
         m = folium.Map(location=[37.8, -96], zoom_start=4)
 
         # Create data for the heatmap
-        heat_data = df[['Latitude', 'Longitude']].dropna().values.tolist()
+        heat_data = df[['Latitude', 'Longitude', 'Product Revenue']].dropna().values.tolist()
 
         # Add a heatmap layer
         HeatMap(heat_data).add_to(m)
 
         # Save the map to an HTML file
-        output_map_path = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/customer_order_volume_forecast_heatmap/data/script_output/order_density_heatmap_usa_by_count.html"
+        output_map_path = r"o	https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/data/script_output/customer_order_density_heatmap_usa_by_weighted_product_revenue.html"
         m.save(output_map_path)
 
-        print(f"Heatmap with markers saved to {output_map_path}")
+        print(f"Heatmap saved to {output_map_path}")
     else:
         print("Error: 'Latitude' and 'Longitude' columns are not found in the Excel file.")
 
