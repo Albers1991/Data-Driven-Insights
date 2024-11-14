@@ -1,0 +1,94 @@
+#######################################################################################################################################
+#                                           Libraries Being Used
+######################################################################################################################################
+
+import pandas as pd
+import random
+from faker import Faker
+
+import os
+import logging
+import time
+
+#######################################################################################################################################
+#                                           Error Tracking
+######################################################################################################################################
+
+# Setup the logging for the error tracking log
+logging.basicConfig(filename='script_errors.log', level=logging.ERROR, 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+#######################################################################################################################################
+#                                           Generate Random Customer Data
+######################################################################################################################################
+
+# Initialize Faker and a random number generator
+fake = Faker()
+
+# Code to generate the random customer reference numbers
+def generate_customer_reference():
+    return f"00-{random.randint(100000, 999999)}"
+
+# Code to generate the revenue columns
+def generate_revenue():
+    try:
+        product_revenue = random.uniform(100, 1000000)  # Random product revenue between $100 and $1,000,000
+        non_product_revenue = random.uniform(50, 500000)  # Random non-product revenue between $50 and $500,000
+        order_revenue = product_revenue + non_product_revenue  # Order revenue is the sum of product and non-product revenue
+        return product_revenue, non_product_revenue, order_revenue
+    except Exception as e:
+        logging.error(f"Error generating revenue: {e}")
+        return 0, 0, 0
+
+# Function to generate random city, state, and zip code
+def generate_city_state_zip():
+    try:
+        city = fake.city()
+        state = fake.state_abbr()
+        zip_code = fake.zipcode_in_state(state)  # Generates a zip code corresponding to the state
+        return city, state, zip_code
+    except Exception as e:
+        logging.error(f"Error generating city/state/zipcode: {e}")
+        return "Unknown", "Unknown", "00000"
+
+
+#######################################################################################################################################
+#                                           Start Workbook Creation
+######################################################################################################################################
+
+
+# Start timing execution
+start_time = time.time()
+
+try:
+    # Create data for 2500 rows
+    data = []
+    for _ in range(2500):
+        customer_ref = generate_customer_reference()
+        product_revenue, non_product_revenue, order_revenue = generate_revenue()
+        city, state, zip_code = generate_city_state_zip()
+        data.append([customer_ref, order_revenue, product_revenue, non_product_revenue, city, state, zip_code])
+
+    # Create the DataFrame
+    df = pd.DataFrame(data, columns=["Customer Reference Number", "Order Revenue", "Product Revenue", 
+                                     "Non Product Revenue", "City", "State", "Zip Code"])
+
+    # Define the path where the script will save the file
+    output_path = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/customer_order_volume_forecast_heatmap/data/customer_orders.xlsx"
+
+    # Ensure the directory exists
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+    # Save the DataFrame to the specified location
+    df.to_excel(output_path, index=False, engine='openpyxl')
+
+    print(f"Workbook 'Customer Orders' generated successfully at: {output_path}")
+
+except Exception as e:
+    logging.error(f"Error during script execution: {e}")
+    print("An error occurred. Please check the script_errors.log for more details.")
+
+# End timing execution and calculate total time taken
+end_time = time.time()
+execution_time = end_time - start_time
+print(f"Execution time: {execution_time:.2f} seconds")
