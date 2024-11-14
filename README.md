@@ -29,7 +29,7 @@ Experienced Operations Analyst specializing in data analytics, process optimizat
 - [View Project](link-to-project-folder)
 
 ## Additional Projects
-- **[Forecasted Installation Volume HeatMap](link-to-project-folder)**
+- **[Customer Order Volume Forecast HeatMap](link-to-project-folder)**
 - **[View Technology Trends Dashboard](https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/technology_trends_dashboard/tech_trends.html)**
 - **[Sales and Revenue Forecasting](link-to-project-folder)**
 
