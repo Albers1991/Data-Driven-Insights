@@ -2,8 +2,8 @@ title: Brandon Albers - Data, Business, and Operations Analyst Portfolio
 description: A showcase of my skills and projects in data analysis and business operations.
 theme: minima
 
-url: "https://Albers1991.github.io"  # Replace 'username' with your actual GitHub username
-baseurl: "/repository"  # Set to '/repository' if you're using a subdirectory
+url: "https://albers1991.github.io"
+baseurl: "/Data-Driven-Insights-Business-Operations-Analysis-Portfolio"
 
 # Build settings
 markdown: kramdown
