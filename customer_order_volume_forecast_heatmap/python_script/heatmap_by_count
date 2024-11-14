@@ -29,7 +29,7 @@ try:
     ##################################################################################################################################################################################
 
     # File path for the Excel file that Geopy will output with the Longitude and Latitude
-    file_path1 = r"ADD FOLDER DIRECTORY HERE\Long Lat Backlog DO Orders.xlsx"
+    file_path1 = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/customer_order_volume_forecast_heatmap/data/script_output/long_lat_customer_orders.xlsx"
 
     # Load the excel file
     df = pd.read_excel(file_path1)
@@ -46,7 +46,7 @@ try:
         HeatMap(heat_data).add_to(m)
 
         # Save the map to an HTML file
-        output_map_path = r"ADD FOLDER DIRECTORY HERE\Order_Density_Heatmap_USA_by_count.html"
+        output_map_path = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/customer_order_volume_forecast_heatmap/data/script_output/order_density_heatmap_usa_by_count.html"
         m.save(output_map_path)
 
         print(f"Heatmap with markers saved to {output_map_path}")
