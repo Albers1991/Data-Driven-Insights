@@ -40,7 +40,9 @@ Experienced Operations Analyst specializing in data analytics, process optimizat
 - **Business Software**: Microsoft Office Suite, Salesforce, Epicor
 
 
-
+- **Email**: [brandonalbers@msn.com](mailto:brandonalbers@msn.com)
+- **LinkedIn**: [Brandon Albers](www.linkedin.com/in/brandon-albers-85ab293b)
+- **GitHub**: [@Albers1991](https://github.com/Albers1991)
 
 
 **[License](https://github.com/Albers1991/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/blob/f6a739f78edff0082ae45546d15127a1993c0625/License)**
