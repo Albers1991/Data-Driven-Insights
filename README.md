@@ -30,7 +30,7 @@ Experienced Operations Analyst specializing in data analytics, process optimizat
 
 ## Additional Projects
 - **[Operations Management and KPI Reporting](link-to-project-folder)**
-- **[Technology Trends Dashboard](https://github.com/Albers1991/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/blob/ff77ef9453c4068785656aed692c6259a65717f3/docs/Tech%20Trends.html))**
+- **[Technology Trends Dashboard](https://github.com/Albers1991/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/blob/ff77ef9453c4068785656aed692c6259a65717f3/docs/Tech%20Trends.html)**
 - **[Sales and Revenue Forecasting](link-to-project-folder)**
 
 ## Skills & Tools
