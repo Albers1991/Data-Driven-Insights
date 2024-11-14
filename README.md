@@ -39,3 +39,6 @@ Experienced Operations Analyst specializing in data analytics, process optimizat
 - **Data Visualization**: Power BI, IBM Cognos
 - **Project Management & Optimization**: Process Optimization, Cost Reduction Strategies, Risk Management
 - **Business Software**: Microsoft Office Suite, Salesforce, Epicor
+
+
+**[License](https://github.com/Albers1991/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/blob/f6a739f78edff0082ae45546d15127a1993c0625/License)**
