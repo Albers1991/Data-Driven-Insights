@@ -29,9 +29,9 @@ Experienced Operations Analyst specializing in data analytics, process optimizat
 - [View Project](link-to-project-folder)
 
 ## Additional Projects
-- **Operations Management and KPI Reporting**
-- **Customer Segmentation and Analysis**
-- **Sales and Revenue Forecasting**
+- **[Operations Management and KPI Reporting](link-to-project-folder)**
+- **[Technology Trends Dashboard] (link-to-project-folder)**
+- **[Sales and Revenue Forecasting](link-to-project-folder)**
 
 ## Skills & Tools
 - **Data Analysis**: SQL, Python, Excel (Advanced)
