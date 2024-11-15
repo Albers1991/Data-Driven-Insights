@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order Volume Forecast Heatmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 1000px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #666;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            width: 45%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Customer Order Volume Forecast Heatmap Project</h1>
+
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>This project includes various heatmaps and data analyses to visualize and forecast customer order volume across different regions and product types. It aims to provide insights into customer behaviors and help optimize decision-making in logistics and sales forecasting.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Components</h2>
+            <div class="projects-list">
+                <div class="card">
+                    <h3>Heatmaps</h3>
+                    <ul>
+                        <li><a href="heatmap/customer_order_density_heatmap_usa_by_count.html" target="_blank">Customer Order Density by Count</a></li>
+                        <li><a href="heatmap/customer_order_density_heatmap_usa_by_weighted_product_revenue.html" target="_blank">Customer Order Density by Weighted Product Revenue</a></li>
+                        <li><a href="heatmap/customer_order_density_heatmap_usa_with_installation_resource_markers.html" target="_blank">Customer Order Density with Installation Resource Markers</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Python Scripts</h3>
+                    <ul>
+                        <li><a href="python_script/add_longitude_latitude_customer_orders.py" download>Add Longitude and Latitude to Customer Orders</a></li>
+                        <li><a href="python_script/customer_order_workbook_generator.py" download>Generate Customer Order Workbook</a></li>
+                        <li><a href="python_script/heatmap_by_count.py" download>Generate Heatmap by Count</a></li>
+                        <li><a href="python_script/heatmap_weighted_product_revenue.py" download>Generate Heatmap by Weighted Product Revenue</a></li>
+                        <li><a href="python_script/heatmap_with_installation_resource_markers.py" download>Generate Heatmap with Installation Resource Markers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Data Files</h2>
+            <ul>
+                <li><a href="data/customer_orders.xlsx" download>Customer Orders Data</a></li>
+                <li><a href="data/script_output/long_lat_customer_orders.xlsx" download>Longitude and Latitude Data</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Documentation</h2>
+            <ul>
+                <li><a href="README.md" target="_blank">README</a></li>
+                <li><a href="IBM Cognos Analytics Dashboard.pdf" target="_blank">IBM Cognos Analytics Dashboard</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
