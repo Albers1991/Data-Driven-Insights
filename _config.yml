@@ -1,9 +1,12 @@
 title: Brandon Albers - Data, Business, and Operations Analyst Portfolio
 description: A showcase of my skills and projects in data analysis and business operations.
-theme: minima
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
 url: "https://albers1991.github.io"  # The base URL for the site
 baseurl: "/Data-Driven-Insights-Business-Operations-Analysis-Portfolio"  # The relative base URL for the repository
 
-# Build settings
 markdown: kramdown
+
+plugins:
+  - jekyll-include-cache
