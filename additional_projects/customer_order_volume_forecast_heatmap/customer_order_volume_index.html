@@ -4,121 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Order Volume Forecast Heatmap</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            max-width: 1000px;
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #007BFF;
-        }
-        h2 {
-            color: #333;
-        }
-        h3 {
-            color: #666;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .projects-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-evenly;
-        }
-        .card {
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            padding: 15px;
-            width: 45%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .card h3 {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Customer Order Volume Forecast Heatmap</h1>
+        <nav>
+            <a href="index.html">Back to Home</a> |
+            <a href="company_vs_3rd_party_freight_model/company_vs_3rd_party_freight_model_index.html">Navigate to Company vs 3rd Party Freight Model Analysis</a> |
+            <a href="landed_margin_forecasting_tool/landed_margin_forecasting_tool_index.html">Navigate to Landed Margin Forecasting Tool</a> |
+            <a href="additional_projects/technology_trends_dashboard/tech_trends.html">Navigate to Technology Trends Dashboard (IBM Cognos Analytics)</a> |
+            <a href="additional_projects/customer_order_volume_forecast_heatmap/customer_order_volume_index.html">Navigate to Customer Order Volume Forecast Heatmap</a> |
+            <a href="additional_projects/3rd_party_installer_onboard/3rd_party_installer_onboard_manual_index.html">Navigate to 3rd Party Installation Onboarding Manual</a>            
+        </nav>
+    </header>
 
-    <div class="container">
-        <h1>Customer Order Volume Forecast Heatmap Project</h1>
-
-        <div class="section">
+    <main>
+        <section id="project-description">
             <h2>Project Overview</h2>
-            <p>This project includes various heatmaps and data analyses to visualize and forecast customer order volume across different regions and product types. It aims to provide insights into customer behaviors and help optimize decision-making in logistics and sales forecasting.</p>
-        </div>
-
-        <div class="section">
-            <h2>Key Components</h2>
-            <div class="projects-list">
-                <div class="card">
-                    <h3>Heatmaps</h3>
-                    <ul>
-                        <li><a href="heatmap/customer_order_density_heatmap_usa_by_count.html" target="_blank">Customer Order Density by Count</a></li>
-                        <li><a href="heatmap/customer_order_density_heatmap_usa_by_weighted_product_revenue.html" target="_blank">Customer Order Density by Weighted Product Revenue</a></li>
-                        <li><a href="heatmap/customer_order_density_heatmap_usa_with_installation_resource_markers.html" target="_blank">Customer Order Density with Installation Resource Markers</a></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Python Scripts</h3>
-                    <ul>
-                        <li><a href="python_script/add_longitude_latitude_customer_orders.py" download>Add Longitude and Latitude to Customer Orders</a></li>
-                        <li><a href="python_script/customer_order_workbook_generator.py" download>Generate Customer Order Workbook</a></li>
-                        <li><a href="python_script/heatmap_by_count.py" download>Generate Heatmap by Count</a></li>
-                        <li><a href="python_script/heatmap_weighted_product_revenue.py" download>Generate Heatmap by Weighted Product Revenue</a></li>
-                        <li><a href="python_script/heatmap_with_installation_resource_markers.py" download>Generate Heatmap with Installation Resource Markers</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Data Files</h2>
+            <p>
+                The Customer Order Volume Forecast Heatmap was a heatmap of our company's next two years' worth of installations and delivery-only shipments. The installation heatmap took into account all installation orders that were already placed as well as all active quotes that our Sales team was currently working. This heatmap also included markers that marked where our current installation resources were located to help us identify where our shortcomings would be in the next two years.
+            </p>
+            <p>
+                The delivery-only heatmap used all orders that were currently placed over the next two years. There were two heatmaps I developed for the team:
+            </p>
             <ul>
-                <li><a href="data/customer_orders.xlsx" download>Customer Orders Data</a></li>
-                <li><a href="data/script_output/long_lat_customer_orders.xlsx" download>Longitude and Latitude Data</a></li>
+                <li>
+                    One based solely on pure delivery counts as if each delivery equaled the same as the next.
+                </li>
+                <li>
+                    The second heatmap took product value into account and weighted it to that metric to help understand where customer damage claims could be highest, so we could prioritize finding higher-quality carriers for those lanes to reduce damage claims.
+                </li>
             </ul>
-        </div>
-
-        <div class="section">
-            <h2>Documentation</h2>
+        </section>
+        
+        <section id="project-includes">
+            <h2>This Project Includes</h2>
             <ul>
-                <li><a href="README.md" target="_blank">README</a></li>
-                <li><a href="IBM Cognos Analytics Dashboard.pdf" target="_blank">IBM Cognos Analytics Dashboard</a></li>
+                <!-- Original Customer Orders Workbook -->
+                <li>
+                    <strong>Original Customer Orders Workbook:</strong> Access the original Excel workbook containing the customer orders extracted from a Salesforce Report.
+                    <ul>
+                        <li>
+                            <a href="additional_projects/customer_order_volume_forecast_heatmap/data/customer_orders.xlsx" download>Download Customer Orders Workbook</a>
+                        </li>
+                    </ul>
+                </li>
+        
+                <!-- Longitude and Latitude Customer Orders Workbook -->
+                <li>
+                    <strong>Longitude and Latitude Customer Orders Workbook:</strong> Access the Excel workbook containing the customer orders extracted from a Salesforce Report but in this report I used a python script to go out and grab the longitude and latitude for each order. This script utilized Pandas, OpenPyxl, and used the Google Maps API to obtain the longitude/latitude.
+                    <ul>
+                        <li>
+                            <a href="additional_projects/customer_order_volume_forecast_heatmap/data/script_output/long_lat_customer_orders.xlsx" download>Download Longitude and Latitude Customer Orders Workbook</a>
+                        </li>
+                        <li>
+                            <a href="additional_projects/customer_order_volume_forecast_heatmap/python_script/add_longitude_latitude_customer_orders.py" download>Download the Python Script used to add the longitude and latitude to the original excel workbook.</a>
+                        </li>
+                    </ul>
+                </li>
+        
+                <!-- Installation Heatmap -->
+                <li>
+                    <strong>Installation Heatmap:</strong> A heatmap that visualizes all placed installation orders and active quotes, along with markers showing the locations of existing installation resources to highlight potential resource gaps for the next two years.
+                    <ul>
+                        <li>
+                            <strong>Resource Location Identification:</strong> Markers on the installation heatmap to indicate where future resource shortages might occur, helping to plan for potential staffing and equipment needs.
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/heatmap/customer_order_density_heatmap_usa_with_installation_resource_markers.html" target="_blank">View the Installation Heatmap</a>
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/scripts/installation_heatmap_script.py" target="_blank">View Python Script for Installation Heatmap</a>
+                        </li>
+                    </ul>
+                </li>
+        
+                <!-- Delivery-Only Heatmap (1) -->
+                <li>
+                    <strong>Delivery-Only Heatmap (1):</strong> A heatmap that visualizes all placed delivery-only orders over the next two years, providing insights into where deliveries will be concentrated.
+                    <ul>
+                        <li>
+                            This heatmap represents delivery counts equally across all lanes, helping to identify the general volume of deliveries across different regions.
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/heatmap/customer_order_density_heatmap_usa_by_count.html" target="_blank">View the Delivery-Only Heatmap</a>
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/scripts/delivery_only_heatmap1_script.py" target="_blank">View Python Script for Delivery-Only Heatmap</a>
+                        </li>
+                    </ul>
+                </li>
+        
+                <!-- Delivery-Only Heatmap (2) -->
+                <li>
+                    <strong>Delivery-Only Heatmap (2):</strong> A heatmap that takes product value into account and weights the delivery count based on value, helping to identify where customer damage claims could be highest and prioritize finding higher-quality carriers for those lanes.
+                    <ul>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/heatmap/customer_order_density_heatmap_usa_by_weighted_product_revenue.html" target="_blank">View the Product Revenue Weighted Delivery-Only Heatmap</a>
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/scripts/delivery_only_heatmap2_script.py" target="_blank">View Python Script for Product Revenue Weighted Delivery-Only Heatmap</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-        </div>
-    </div>
+        </section>
+        
+        
+        <section id="contributions">
+            <h2>My Contributions</h2>
+            <p>
+                The first thing I had to do for this project was obtain the data for both installations and delivery-only orders for the next two years. I utilized a Salesforce report that I created to gather the data I needed for the installations. Since the installations needed to include both open orders and active quotes, I had to use Salesforce. For delivery-only orders, I utilized a Power BI report that I created, which pulls data from our ERP (Epicor). From there, I was able to start writing the script that I mentioned above.
+            </p>
+        </section>
 
+        <section id="skills-demonstrated">
+            <h2>Skills Demonstrated</h2>
+            <ul>
+                <li><strong>Data Extraction & Reporting:</strong> Utilized Salesforce and Power BI to extract and organize installation and delivery data.</li>
+                <li><strong>Data Analysis:</strong> Analyzed order data to create forecasts and identify potential resource gaps using heatmaps.</li>
+                <li><strong>Data Visualization:</strong> Created heatmaps to visualize customer order densities and resource gaps.</li>
+                <li><strong>Python Scripting:</strong> Developed Python scripts using libraries like Pandas and OpenPyxl for data manipulation and analysis.</li>
+                <li><strong>Geospatial Analysis:</strong> Integrated longitude and latitude data into customer orders using the Google Maps API.</li>
+                <li><strong>ERP Integration:</strong> Integrated and extracted data from Epicor ERP for comprehensive business analysis.</li>
+                <li><strong>Project Management:</strong> Managed data collection, script development, and heatmap creation from inception to completion.</li>
+                <li><strong>Problem Solving:</strong> Identified gaps in installation resources and optimized delivery routes based on data analysis.</li>
+                <li><strong>Data-Driven Decision Making:</strong> Delivered actionable insights to support resource allocation and customer service optimization.</li>
+            </ul>
+        </section>
+
+
+    <footer>
+        <p>&copy; 2024 Brandon Albers</p>
+    </footer>
 </body>
 </html>
+

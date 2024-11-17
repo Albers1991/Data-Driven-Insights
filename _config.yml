@@ -1,3 +1,5 @@
+# _config.yml
+
 title: Brandon Albers - Data, Business, and Operations Analyst Portfolio
 description: A showcase of my skills and projects in data analysis and business operations.
 
@@ -10,3 +12,10 @@ markdown: kramdown
 
 plugins:
   - jekyll-include-cache
+
+# Defines where Jekyll looks for CSS and/or JS files
+assets:
+  css:
+    - "/assets/css/main.css"
+
+theme: minima

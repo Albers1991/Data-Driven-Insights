@@ -1,0 +1,15 @@
+/* main.css */
+
+/* assets/css/main.css */
+
+/* Confidentiality Notice Styling */
+.confidentiality-notice {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
