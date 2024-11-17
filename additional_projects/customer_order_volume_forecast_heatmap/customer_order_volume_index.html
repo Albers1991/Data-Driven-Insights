@@ -3,137 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the current and future technology trends, along with demographic insights on platform and database usage.">
-    <title>Technology Trends Dashboard</title>
-    <style>
-        img {
-            width: 80%;
-            height: auto;
-            margin: 20px 0;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 40px;
-        }
-        h2 {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 1.2em;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        header {
-            background-color: #f1f1f1;
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Customer Order Volume Forecast Heatmap</title>
 </head>
 <body>
     <header>
-        <h1>Technology Trends Dashboard</h1>
+        <h1>Customer Order Volume Forecast Heatmap</h1>
         <nav>
             <a href="index.html">Back to Home</a> |
             <a href="company_vs_3rd_party_freight_model/company_vs_3rd_party_freight_model_index.html">Navigate to Company vs 3rd Party Freight Model Analysis</a> |
             <a href="landed_margin_forecasting_tool/landed_margin_forecasting_tool_index.html">Navigate to Landed Margin Forecasting Tool</a> |
             <a href="cost_optimization_for_installation_operations.html">Navigate to the Cost Optimization for Installation Operations Project</a> |
             <a href="additional_projects/technology_trends_dashboard/tech_trends_index.html">Navigate to the Technology Trends Dashboard (IBM Cognos Analytics)</a> |
-            <a href="additional_projects/3rd_party_installer_onboard/3rd_party_installer_onboard_manual_index.html">Navigate to 3rd Party Installation Onboarding Manual</a>            
+            <a href="additional_projects/3rd_party_installer_onboard/3rd_party_installer_onboard_manual_index.html">Navigate to 3rd Party Installation Onboarding Manual</a>  
         </nav>
     </header>
 
-    <h1>Current Technology Trends</h1>
+    <main>
+        <section id="project-description">
+            <h2>Project Overview</h2>
+            <p>
+                The Customer Order Volume Forecast Heatmap is a tool designed to help forecast customer order volumes for installations and delivery-only shipments over the next two years. It uses active orders and quotes to predict demand and resource needs, as well as to identify potential service gaps.
+            </p>
+            <p>
+                The heatmap for installations includes placed orders and active quotes from the Sales team, with markers showing the locations of current installation resources. This visualizes potential resource shortages over the next two years.
+            </p>
+            <p>
+                The delivery-only heatmap factors in both order volumes and product value, helping us anticipate areas where high-value deliveries may lead to increased customer claims. This visualization was used to prioritize lanes with higher-value shipments to secure better quality carriers and reduce risk.
+            </p>
+        </section>
+        
+        <section id="tool-includes">
+            <h2>This Tool Includes</h2>
+            <ul>
+                <li>
+                    <strong>Installation Heatmap:</strong> A heatmap that visualizes all placed installation orders and active quotes, along with markers showing the locations of existing installation resources to highlight potential resource gaps for the next two years.
+                    <ul>
+                        <li>
+                            <strong>Resource Location Identification:</strong> Markers on the installation heatmap to indicate where future resource shortages might occur, helping to plan for potential staffing and equipment needs.
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/heatmap/customer_order_density_heatmap_usa_with_installation_resource_markers.html" target="_blank">View the Installation Heatmap</a>
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/python_script/installation_heatmap_script.py" target="_blank">View the Python Script for Installation Heatmap</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Delivery-Only Heatmap (1):</strong> A heatmap that visualizes all placed delivery-only orders over the next two years, providing insights into where deliveries will be concentrated.
+                    <ul>
+                        <li>
+                            This heatmap represents delivery counts equally across all lanes, helping to identify the general volume of deliveries across different regions.
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/heatmap/customer_order_density_heatmap_usa_by_count.html" target="_blank">View the Delivery-Only Heatmap (1)</a>
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/python_script/delivery_only_heatmap_by_count_script.py" target="_blank">View the Python Script for Delivery-Only Heatmap (1)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Delivery-Only Heatmap (2):</strong> A heatmap that takes product value into account and weights the delivery count based on value, helping to identify where customer damage claims could be highest and prioritize finding higher-quality carriers for those lanes.
+                    <ul>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/heatmap/customer_order_density_heatmap_usa_by_weighted_product_revenue.html" target="_blank">View the Product Revenue Weighted Delivery-Only Heatmap (2)</a>
+                        </li>
+                        <li>
+                            <a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/python_script/delivery_only_heatmap_by_weighted_product_revenue_script.py" target="_blank">View the Python Script for Delivery-Only Heatmap (2)</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>    
 
-    <section>
-        <h2>Most Utilized Databases of the Year</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/current_tech_trends/Top 10 Databases Worked With.png" alt="Most Utilized Databases of the Year">
-        <p>This graph showcases the top 10 databases that professionals have worked with this year. It highlights the most commonly used databases across industries.</p>
-    </section>
+        <section id="contributions">
+            <h2>My Contributions</h2>
+            <p>
+                I developed the Customer Order Volume Forecast Heatmap tool from the ground up, integrating multiple data sources such as orders and quotes to forecast customer demand and resource allocation over the next two years. I used geospatial analysis to visualize installation resources and identify gaps, ensuring that our teams could prepare for future resource needs.
+            </p>
+            <p>
+                Additionally, I created two distinct heatmaps: one based on raw delivery counts, and another weighted by product revenue to anticipate customer claims and prioritize high-value lanes. This tool provided invaluable insights to optimize logistics and carrier selection, enhancing the team's decision-making process.
+            </p>
+        </section>
+        
 
-    <section>
-        <h2>Top 10 Most Used Programming Languages This Year</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/current_tech_trends/Top 10 Languages Worked With.png" alt="Top 10 Most Used Programming Languages This Year">
-        <p>This graph displays the top 10 programming languages that have been most utilized in the current year. It provides insights into which languages are in high demand.</p>
-    </section>
+        <section id="skills-demonstrated">
+            <h2>Skills Demonstrated</h2>
+            <ul>
+                <li>Data Visualization with heatmaps and Python libraries (Matplotlib, Folium)</li>
+                <li>Forecasting and Predictive Analytics using historical order data</li>
+                <li>Geospatial Analysis for resource gap identification</li>
+                <li>Data Integration and Transformation (order and quote data)</li>
+                <li>Python programming (Pandas, Matplotlib, NumPy) for data processing and visualization</li>
+                <li>Statistical forecasting and predictive modeling methods</li>
+                <li>Project Management: Design, development, testing, and deployment of the tool</li>
+                <li>Collaboration with cross-functional teams (Sales, Operations, and Logistics)</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Most Utilized Web Frameworks of the Year</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/current_tech_trends/Top 10 WebFrame Worked WIth.png" alt="Most Utilized WebFrames of the Year">
-        <p>This graph outlines the most popular web frameworks of the year. It highlights the frameworks that developers are using to build web applications.</p>
-    </section>
-
-    <section>
-        <h2>Most Used Platforms of the Year</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/current_tech_trends/Platforms Worked With WordCloud.png" alt="Most Used Platforms of the Year">
-        <p>This word cloud displays the most widely used platforms in the industry this year. It visually emphasizes the most dominant platforms based on user activity.</p>
-    </section>
-
-    <h1>Future Technology Trends</h1>
-
-    <section>
-        <h2>Top 10 Databases to Monitor Next Year</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/future_tech_trends/Top 10 Database Desired Next Year.png" alt="Top 10 Databases to Monitor Next Year">
-        <p>This graph forecasts the top 10 databases to watch for next year, indicating emerging technologies in the database management field.</p>
-    </section>
-
-    <section>
-        <h2>Top 10 Programming Languages to Learn for Next Year</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/future_tech_trends/Top 10 Language Desired Next Year.png" alt="Top 10 Programming Languages to Learn for Next Year">
-        <p>Here we see the top 10 programming languages to focus on for next year, offering insights into where the demand for coding skills will grow.</p>
-    </section>
-
-    <section>
-        <h2>Top 10 Desired Web Frameworks for Next Year</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/future_tech_trends/Top 10 WebFrame Desired Next Year.png" alt="Top 10 Desired WebFrames for Next Year">
-        <p>This graph outlines the web frameworks that are expected to be in demand for the upcoming year, guiding developers on where to focus their skills.</p>
-    </section>
-
-    <section>
-        <h2>Top Operating Systems in Demand for Next Year</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/future_tech_trends/Top OS Treemap.png" alt="Top Operating Systems in Demand for Next Year">
-        <p>This treemap highlights the top operating systems that are projected to see increased demand in the coming year, helping to understand where IT resources should be allocated.</p>
-    </section>
-
-    <h1>Demographic Insights on Platform and Database Usage</h1>
-
-    <section>
-        <h2>Gender Distribution of Respondents</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/demographics/Respondent Classified by Gender.png" alt="Gender Distribution of Respondents">
-        <p>This graph shows the gender distribution of survey respondents, providing insights into the demographic breakdown of technology professionals.</p>
-    </section>
-
-    <section>
-        <h2>Age Demographics of Respondents</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/demographics/Respondent Count by Age.png" alt="Age Demographics of Respondents">
-        <p>This graph shows the age breakdown of survey respondents, offering insights into the generational representation in the technology industry.</p>
-    </section>
-
-    <section>
-        <h2>Respondent Distribution by Gender and Education Level</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/demographics/Respondent Count by Gender Classified by Education Level.png" alt="Respondent Distribution by Gender and Education Level">
-        <p>This graph illustrates the distribution of respondents by gender and their corresponding education levels, giving insights into the educational background of technology professionals.</p>
-    </section>
-
-    <section>
-        <h2>Respondent Breakdown by Country</h2>
-        <img src="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/technology_trends_dashboard/demographics/Respondent Count for Countries.png" alt="Respondent Breakdown by Country">
-        <p>This map provides a breakdown of respondents by country, showcasing the global reach of the survey and identifying regional trends in technology usage.</p>
-    </section>
+    <footer>
+        <p>&copy; 2024 Brandon Albers</p>
+    </footer>
 </body>
 </html>

@@ -1,13 +1,112 @@
+---
+layout: default
+title: Cost Optimization for Installation Operations
+description: Analysis to identify cost-saving strategies in installation operations by evaluating third-party expenses and in-house efficiencies.
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cost Optimization for Installation Operations</title>
+    <title>{{ page.title }}</title>
 </head>
 <body>
-    <h1>Cost Optimization for Installation Operations</h1>
-    <p>Click the link below to view or download the <strong>Cost Optimization for Installation Operations</strong> document:</p>
-    <a href="PLACEHOLDER" download>Download the Document</a>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html">Back to Home</a> |
+                <a href="company_vs_3rd_party_freight_model/company_vs_3rd_party_freight_model_index.html">Navigate to Company vs 3rd Party Freight Model Analysis</a> |
+                <a href="landed_margin_forecasting_tool/landed_margin_forecasting_tool_index.html">Navigate to Landed Margin Forecasting Tool</a> |
+                <a href="additional_projects/customer_order_volume_forecast_heatmap/customer_order_volume_index.html">Navigate to Customer Order Volume Forecast Heatmap</a> |
+                <a href="additional_projects/technology_trends_dashboard/tech_trends_index.html">Navigate to the Technology Trends Dashboard (IBM Cognos Analytics)</a> |
+                <a href="additional_projects/3rd_party_installer_onboard/3rd_party_installer_onboard_manual_index.html">Navigate to 3rd Party Installation Onboarding Manual</a>  
+            </ul>
+        </nav>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+    </header>
+
+
+    <section>
+        <h2>Overview of Analysis</h2>
+        <p>This analysis was conducted to evaluate the potential savings for our company by transitioning to a model where we hire six in-house installers in Maine instead of relying on third-party installers. Maine, being the state with the majority of our installation revenue, was critical to the success of this analysis. Given that our installation order volume varies year to year, the analysis included projections for both low and high volume installation years.</p>
+        <p>The first step was breaking the state into territories to ensure more manageable and comparable data analysis. By utilizing ERP data pulled from Epicor and Power BI, I generated a heatmap of all orders within the state over the last three years. This helped identify regions that would benefit from in-house installers by minimizing expenses.</p>
+    </section>
+    
+    <section>
+        <h2>Data Sources and Methodology</h2>
+        <p>The data for this analysis was sourced from our internal ERP (Epicor) system, where I pulled installation order details for the past three years. I then created a heatmap to break down the data by zip code, helping us identify the most efficient territories for placing installers. Along with installation data, revenue from orders and expenses incurred from third-party installers were used to establish baseline costs.</p>
+        <p>Several challenges arose due to how our company tracks expenses and recognizes revenue. First, our expenses for third-party installers are not tracked at a line-item level, making it difficult to compare costs accurately. Additionally, while our company charges customers for both installation and freight, the freight charges also cover travel and supply costs that third-party installers bill under the installation expenses. This led to challenges in accurately comparing costs between the two models.</p>
+    </section>
+    
+    <section>
+        <h2>Cost Breakdown</h2>
+        <p>For third-party providers, major cost components were:</p>
+        <ul>
+            <li>Installation charges per project type</li>
+            <li>Regional differences in labor rates</li>
+            <li>Travel expenses for on-site installation work (e.g., travel time, accommodation, per diem)</li>
+        </ul>
+        <p>For the in-house model, the projected costs included:</p>
+        <ul>
+            <li>Salaries, benefits, and insurance for new employees</li>
+            <li>Overhead costs for new equipment, tools, and supplies</li>
+            <li>Vehicle purchase and maintenance (for 6 new vehicles)</li>
+            <li>Office staff and technology (computers, printers, and office supplies)</li>
+        </ul>
+        <p>This comparison was crucial to determining whether the transition to an in-house model would lead to significant savings or result in increased costs.</p>
+    </section>
+    
+    <section>
+        <h2>Projected Savings</h2>
+        <p>By shifting installation responsibilities to an in-house team, the analysis projected potential savings in travel expenses, hourly rates on-site, and overall operational costs:</p>
+        <ul>
+            <li>Travel Expenses: On a low-volume installation year, savings would be approximately $265,000, and on a high-volume year, savings would increase to $345,000.</li>
+            <li>Hourly Installations: By hiring local union carpenters, we estimated savings of $90,000 in a low-volume year and $142,000 in a high-volume year.</li>
+        </ul>
+        <p>However, after factoring in the additional expenses associated with hiring in-house staff, including salaries, benefits, vehicles, and office staff, the overall savings were offset by an additional $199,000 in operating expenses for low installation years, and $128,000 in high installation years. This led to an initial capital investment of $465,000 for equipment, vehicles, and technology.</p>
+        <p>Despite initial expectations for significant savings, the analysis ultimately recommended against moving forward with the expansion to Maine due to the projected costs outweighing the savings potential.</p>
+    </section>
+    
+    <section id="skills-demonstrated">
+        <h2>Skills Demonstrated</h2>
+        <ul>
+            <li>Data Analysis (Excel, Power BI)</li>
+            <li>Data Visualization (Power BI, Excel)</li>
+            <li>Geospatial Analysis (Heat Mapping, Territory Optimization)</li>
+            <li>Cost Optimization</li>
+            <li>Cost-Benefit Analysis</li>
+            <li>Scenario Modeling and Projections</li>
+            <li>Cost Allocation and Financial Analysis</li>
+            <li>Problem-Solving (Navigating Data Gaps and Complex Cost Structures)</li>
+            <li>Advanced Excel (Formulas, Pivot Tables, Heat Maps)</li>
+            <li>Data Cleansing and Transformation</li>
+            <li>Project Costing and Budgeting</li>
+            <li>Operational Process Improvement</li>
+            <li>Cross-Functional Collaboration (Working with Different Teams)</li>
+            <li>Strategic Planning and Decision Making</li>
+            <li>Vendor and Supplier Management</li>
+            <li>Risk Assessment and Mitigation</li>
+            <li>Data-Driven Decision Making</li>
+            <li>Stakeholder Communication and Reporting</li>
+            <li>Supply Chain Management (Logistics and Installations)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Downloads</h2>
+        <p>Download the files associated with this project:</p>
+        <ul>
+            <li><a href="cost_optimization_for_installation_operations/excel/cost_optimization_for_installation_operations.xlsx" download>Excel Workbook</a></li>
+            <li><a href="cost_optimization_for_installation_operations/powerpoint/cost_optimization_for_installation_operations.pptx" download>PowerPoint Presentation</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Confidentiality Notice</h2>
+        <p>For confidentiality purposes, all financial information specific to the company's operations has been removed. Financial data in certain tabs was omitted, and values in other tabs were copy-pasted to eliminate sensitive financial details.</p>
+    </section>
+
 </body>
 </html>
