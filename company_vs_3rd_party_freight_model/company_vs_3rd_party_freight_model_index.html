@@ -1,23 +1,32 @@
+---
+layout: default
+title: Company vs 3rd Party Freight Model
+description: Analysis of cost savings potential by hiring in-house drivers versus using third-party carriers, including detailed cost breakdowns.
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Analysis of cost savings potential by hiring in-house drivers versus using third-party carriers, including detailed cost breakdowns.">
-    <title>Company vs 3rd Party Freight Model</title>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <header>
-        <h1>Company vs 3rd Party Freight Model</h1>
+        <!-- Navigation Menu using CSS-->
         <nav>
-            <a href="index.html">Back to Home</a> |
-            <a href="../landed_margin_forecasting_tool/landed_margin_forecasting_tool_index.html">Navigate to Landed Margin Forecasting Tool</a> |
-            <a href="../cost_optimization_for_installation_operations/cost_optimization_for_installation_operations_index.html">Navigate to Cost Optimization for Installation Operations Project</a> |
-            <a href="../landed_margin_forecasting_tool/landed_margin_forecasting_tool_index.html">Navigate to Landed Margin Forecasting Tool</a> |
-            <a href="../additional_projects/technology_trends_dashboard/tech_trends.html">Navigate to Technology Trends Dashboard</a> |
-            <a href="../customer_order_volume_forecast_heatmap/customer_order_volume_index.html">Navigate to Customer Order Volume Forecast Heatmap</a> |
-            <a href="../3rd_party_installer_onboard/3rd_party_installer_onboard_manual_index.html">Navigate to 3rd Party Installation Onboarding Manual</a>
+            <ul class="menu">
+                <li><a href="index.html">Back to Home</a></li>
+                <li><a href="company_vs_3rd_party_freight_model/company_vs_3rd_party_freight_model_index.html">Company vs 3rd Party Freight Model Analysis</a></li>
+                <li><a href="landed_margin_forecasting_tool/landed_margin_forecasting_tool_index.html">Landed Margin Forecasting Tool</a></li>
+                <li><a href="additional_projects/customer_order_volume_forecast_heatmap/customer_order_volume_index.html">Customer Order Volume Forecast Heatmap</a></li>
+                <li><a href="additional_projects/technology_trends_dashboard/tech_trends.html">Technology Trends Dashboard (IBM Cognos Analytics)</a></li>
+                <li><a href="additional_projects/3rd_party_installer_onboard/3rd_party_installer_onboard_manual_index.html">3rd Party Installation Onboarding Manual</a></li>
+            </ul>
         </nav>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
     </header>
 
     <section>
@@ -25,8 +34,6 @@
         <p>This analysis compares the cost of using in-house drivers against using third-party carriers for freight transportation. It includes detailed cost breakdowns and calculates potential annual savings. The findings of this analysis were presented to the executive team, where I outlined the potential savings, methodology, and key takeaways to aid in strategic decision-making.</p>
     </section>
     
-    
-
     <section>
         <h2>Data Sources and Methodology</h2>
         <p>Two main data sources were used for this analysis. The first source was obtained from the Bureau of Economic Research, which provided distance data between every ZIP code in the United States. Given that this dataset contained over 30 billion rows, a Python script was used to create a new Excel file containing only the data for the ZIP code where our company is located, alongside distances to every other ZIP code in the U.S.</p>
@@ -35,7 +42,6 @@
         <p>Next, I had to estimate the new expenses we would incur by hiring our own over-the-road drivers to see if this approach would offer cost savings compared to using third-party carriers. Through research, I gathered data on average annual mileage for over-the-road drivers, fuel efficiency for the semi-tractor we would lease, daily driving limits to estimate hotel expenses, and employee-related costs such as benefits, unemployment taxes, and other associated expenses.</p>
         <p>Once all this data was compiled, I used certain assumptions to calculate the potential CPM for delivering freight with our own drivers. This analysis provided insights into whether hiring in-house drivers could offer savings compared to relying on third-party carriers.</p>
     </section>
-    
 
     <section>
         <h2>Cost Breakdown</h2>
@@ -62,7 +68,7 @@
         
         <p>By comparing the CPMs for both options, I was able to evaluate how the cost per mile for using in-house drivers stacked up against third-party carriers. This comparison was made across different states, as costs can vary depending on local conditions such as fuel prices and labor rates. Ultimately, the analysis highlighted which option provides the most cost-effective solution for our freight transportation needs.</p>
     </section>
-    
+
     <section>
         <h2>Projected Savings</h2>
         <p>Based on the analysis, it is estimated that the company could save up to $239,800 annually by using in-house drivers instead of relying on third-party carriers. If optimized further, savings could exceed $500,000.</p>
@@ -103,3 +109,4 @@
     
 </body>
 </html>
+

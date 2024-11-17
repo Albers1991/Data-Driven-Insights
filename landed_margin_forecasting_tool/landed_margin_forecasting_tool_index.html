@@ -1,13 +1,66 @@
+---
+layout: default
+title: Landed Margin Forecasting Tool
+description: Tool to forecast landed margins based on customer-adjusted margins and freight cost constraints.
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landed Margin Forecasting Tool</title>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <h1>Landed Margin Forecasting Tool</h1>
-    <p>Click the link below to view or download the <strong>Landed Margin Forecasting Tool</strong> document:</p>
-    <a href="PLACEHOLDER" download>Download the Document</a>
+    <header>
+        <!-- Navigation Menu using CSS -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Back to Home</a></li>
+                <li><a href="company_vs_3rd_party_freight_model/company_vs_3rd_party_freight_model_index.html">Company vs 3rd Party Freight Model</a></li>
+                <li><a href="cost_optimization_for_installation_operations/cost_optimization_for_installation_operations_index.html">Cost Optimization for Installation Operations</a></li>
+                <li><a href="additional_projects/technology_trends_dashboard/tech_trends.html">Technology Trends Dashboard</a></li>
+                <li><a href="customer_order_volume_forecast_heatmap/customer_order_volume_index.html">Customer Order Volume Forecast Heatmap</a></li>
+                <li><a href="3rd_party_installer_onboard/3rd_party_installer_onboard_manual_index.html">3rd Party Installation Onboarding Manual</a></li>
+            </ul>
+        </nav>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+    </header>
+
+    <section>
+        <h2>Overview</h2>
+        <p>The Landed Margin Forecasting Tool enables management to assess the impact of adjusting customer margins on the achievable landed margin. Using historical data and freight cost constraints, this tool provides insights for strategic pricing adjustments.</p>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+        <ul>
+            <li>Calculates margin based on costs and revenue from historical order data.</li>
+            <li>Uses linear functions to forecast landed margins across various margin buckets.</li>
+            <li>Applies a freight charge limit, adjusting calculations when the charge exceeds 20% of the product order total.</li>
+        </ul>
+    </section>
+
+    <section id="skills-demonstrated">
+        <h2>Skills Demonstrated</h2>
+        <ul>
+            <li>Data Analysis and Forecasting</li>
+            <li>Advanced Excel Functions</li>
+            <li>Process Optimization</li>
+            <li>Project Management</li>
+            <li>Strategic Decision Support</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Download the Tool</h2>
+        <p>Click the link below to view or download the <strong>Landed Margin Forecasting Tool</strong>:</p>
+        <ul>
+            <li><a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/landed_margin_forecasting_tool/landed_margin_forecasting_tool_document.xlsx" download>Download the Document</a></li>
+        </ul>
+    </section>
+    
 </body>
 </html>
