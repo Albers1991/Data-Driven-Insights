@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Company vs 3rd Party Freight Model &middot; Brandon Albers - Data, Business, and Operations Analyst Portfolio
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/assets/css/poole.css">
+  <link rel="stylesheet" href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/assets/css/syntax.css">
+  <link rel="stylesheet" href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/assets/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/assets/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Brandon Albers - Data, Business, and Operations Analyst Portfolio" href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/feed.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/">
+          Brandon Albers - Data, Business, and Operations Analyst Portfolio
+        </a>
+      </h1>
+      <p class="lead">A showcase of my skills and projects in data analysis and business operations.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="/archive/v.zip">Download</a>
+      <a class="sidebar-nav-item" href="">GitHub project</a>
+      <span class="sidebar-nav-item">Currently v</span>
+    </nav>
+
+    <p>&copy; 2024. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company vs 3rd Party Freight Model</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Menu using CSS-->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Back to Home</a></li>
+                <li><a href="company_vs_3rd_party_freight_model/company_vs_3rd_party_freight_model_index.html">Company vs 3rd Party Freight Model Analysis</a></li>
+                <li><a href="landed_margin_forecasting_tool/landed_margin_forecasting_tool_index.html">Landed Margin Forecasting Tool</a></li>
+                <li><a href="additional_projects/customer_order_volume_forecast_heatmap/customer_order_volume_index.html">Customer Order Volume Forecast Heatmap</a></li>
+                <li><a href="additional_projects/technology_trends_dashboard/tech_trends.html">Technology Trends Dashboard (IBM Cognos Analytics)</a></li>
+                <li><a href="additional_projects/3rd_party_installer_onboard/3rd_party_installer_onboard_manual_index.html">3rd Party Installation Onboarding Manual</a></li>
+            </ul>
+        </nav>
+        <h1>Company vs 3rd Party Freight Model</h1>
+        <p>Analysis of cost savings potential by hiring in-house drivers versus using third-party carriers, including detailed cost breakdowns.</p>
+    </header>
+
+    <section>
+        <h2>Overview of Analysis</h2>
+        <p>This analysis compares the cost of using in-house drivers against using third-party carriers for freight transportation. It includes detailed cost breakdowns and calculates potential annual savings. The findings of this analysis were presented to the executive team, where I outlined the potential savings, methodology, and key takeaways to aid in strategic decision-making.</p>
+    </section>
+    
+    <section>
+        <h2>Data Sources and Methodology</h2>
+        <p>Two main data sources were used for this analysis. The first source was obtained from the Bureau of Economic Research, which provided distance data between every ZIP code in the United States. Given that this dataset contained over 30 billion rows, a Python script was used to create a new Excel file containing only the data for the ZIP code where our company is located, alongside distances to every other ZIP code in the U.S.</p>
+        <p>The second data source was pulled from our ERP system (Epicor) using Power BI. This dataset included all order-related information for the past three years, specifically for shipments hauled by truckload carriers. It included details such as city, state, ZIP code, revenue, and expenses for each order.</p>
+        <p>Using Excel functions like VLOOKUP, I was able to calculate the distance for each order over the last three years by referencing the distance data from the Bureau of Economic Research. This enabled me to determine the Cost Per Mile (CPM) for each of our truckload carriers by state.</p>
+        <p>Next, I had to estimate the new expenses we would incur by hiring our own over-the-road drivers to see if this approach would offer cost savings compared to using third-party carriers. Through research, I gathered data on average annual mileage for over-the-road drivers, fuel efficiency for the semi-tractor we would lease, daily driving limits to estimate hotel expenses, and employee-related costs such as benefits, unemployment taxes, and other associated expenses.</p>
+        <p>Once all this data was compiled, I used certain assumptions to calculate the potential CPM for delivering freight with our own drivers. This analysis provided insights into whether hiring in-house drivers could offer savings compared to relying on third-party carriers.</p>
+    </section>
+
+    <section>
+        <h2>Cost Breakdown</h2>
+        <p>This analysis compares the per-mile expenses for in-house drivers and third-party carriers across different states. The comparison factors in a range of costs associated with each option, helping to assess the potential cost savings of using in-house drivers instead of relying on third-party carriers for every delivery.</p>
+        
+        <p>For the third-party carriers, the cost per mile (CPM) was calculated based on the charges they billed us per load hauled. The total charge for each delivery was divided by the distance to the delivery destination, which allowed us to determine the per-mile cost for each shipment. This method provided a straightforward approach to comparing third-party carrier costs for each delivery. The factors that were considered in this CPM calculation include:</p>
+        <ul>
+            <li>Charges billed per load hauled</li>
+            <li>Distance to the specific delivery location (derived from Bureau of Economic Research data)</li>
+            <li>Any variation in charges for different routes or delivery locations</li>
+        </ul>
+        
+        <p>For the in-house drivers, we calculated a similar CPM by taking into account several additional factors specific to leasing and operating a fleet of trucks. These costs include:</p>
+        <ul>
+            <li>Fuel costs for leased semi-tractors</li>
+            <li>Driver wages, benefits, and unemployment taxes</li>
+            <li>Employee-related expenses, including insurance and retirement benefits</li>
+            <li>Leasing costs for the semi-trucks</li>
+            <li>Hotel and per diem expenses for over-the-road drivers</li>
+            <li>Maintenance and upkeep of the trucks</li>
+        </ul>
+        
+        <p>While the original analysis included a comparison between the costs of purchasing equipment versus leasing, this was removed from the final analysis per management's instructions. Purchasing equipment was determined to be drastically cheaper; however, the company did not want to get into the business of owning equipment, so the analysis focused solely on leasing the semi-trucks.</p>
+        
+        <p>By comparing the CPMs for both options, I was able to evaluate how the cost per mile for using in-house drivers stacked up against third-party carriers. This comparison was made across different states, as costs can vary depending on local conditions such as fuel prices and labor rates. Ultimately, the analysis highlighted which option provides the most cost-effective solution for our freight transportation needs.</p>
+    </section>
+
+    <section>
+        <h2>Projected Savings</h2>
+        <p>Based on the analysis, it is estimated that the company could save up to $239,800 annually by using in-house drivers instead of relying on third-party carriers. If optimized further, savings could exceed $500,000.</p>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>This analysis provides valuable insights into potential cost-saving strategies for freight transportation. By evaluating both options thoroughly, the company can make more informed decisions on managing logistics costs. I presented these findings to the executive team, highlighting the potential cost savings and the strategic value of the analysis to guide future logistics decisions.</p>
+    </section>    
+
+    <section id="skills-demonstrated">
+        <h2>Skills Demonstrated</h2>
+        <ul>
+            <li>Data Analysis</li>
+            <li>Cost Modeling</li>
+            <li>Excel (Advanced Functions, VLOOKUP)</li>
+            <li>Python (Data Processing, Scripting)</li>
+            <li>Power BI (Data Visualization)</li>
+            <li>Project Management</li>
+            <li>Cost Optimization</li>
+            <li>Research and Data Gathering</li>
+            <li>Technical Writing</li>
+            <li>Problem Solving and Decision Making</li>
+            <li>Communication and Reporting</li>
+            <li>PowerPoint Presentation Creation</li>
+            <li>Executive-Level Presentation Skills</li>
+        </ul>
+    </section>    
+    
+    <section>
+        <h2>Download Files</h2>
+        <p>Click the links below to download the PowerPoint presentation and the Excel workbook that contains the data and analysis for the Company vs 3rd Party Freight Model analysis.</p>
+        <ul>
+            <li><a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/company_vs_3rd_party_freight_model/Powerpoint/company_vs_3rd_party_freight_model.pptx" download>Download PowerPoint Presentation</a></li>
+            <li><a href="https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/company_vs_3rd_party_freight_model/excel/company_vs_3rd_party_freight_model.xlsx" download>Download Excel Workbook</a></li>
+        </ul>
+    </section>
+    
+</body>
+</html>
+
+
+    </div>
+
+  </body>
+</html>

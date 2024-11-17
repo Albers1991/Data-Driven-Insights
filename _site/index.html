@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Albers - Data, Business, and Operations Analyst Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Brandon Albers - Data, Business, and Operations Analyst Portfolio</h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Experienced Operations Analyst specializing in data analytics, process optimization, and cost-saving strategies. Skilled in SQL, Python, Power BI, and advanced Excel, with a strong background in project management and team leadership. This portfolio showcases my work and demonstrates my expertise in leveraging data to drive business decisions and operational efficiencies.</p>
+    </section>
+
+
+<!--                                                                 START OF TABLE OF CONTENTS CODE                                                                                -->
+
+    
+    <section>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="landed_margin_forecasting_tool/landed_margin_forecasting_tool_index.html">Project 1: Landed Margin Forecasting Tool</a></li>
+            <li><a href="company_vs_3rd_party_freight_model_index/company_vs_3rd_party_freight_model_index.html">Project 2: Company vs 3rd Party Freight Model</a></li>
+            <li><a href="cost_optimization_for_installation_operations/cost_optimization_for_installation_operations_index.html">Project 3: Cost Optimization for Installation Operations</a></li>
+            <li><a href="#additional-projects">Additional Projects</a></li>
+            <li><a href="#skills-tools">Skills & Tools</a></li>
+            
+        </ul>
+    </section>
+
+
+
+<!--                                                              START OF CONFIDENTIALITY NOTICE CODE                                                                              -->
+
+
+
+<div class="confidentiality-notice">
+    <p>
+        <strong>Confidentiality Notice:</strong> This document and the information contained herein are confidential and proprietary. All company-specific details have been removed and replaced with randomized data for portfolio purposes.
+    </p>
+</div>
+
+
+
+
+
+
+
+
+<!--                                                                 START OF PROJECT 1 CODE                                                                                       -->
+
+
+    <section id="landed_margin_forecasting_tool">
+        <h3>Project 1: Landed Margin Forecasting Tool</h3>
+
+        <p><strong>Description:</strong> The Freight Margin Forecasting Calculator is a strategic tool for management to evaluate the impact of varying bid margins on the landed margin. Due to a rule limiting the freight charge to a maximum of 20% of the customer’s product order total, standard high-margin bids (such as 70%) often result in reaching this cap, thus reducing the effective landed margin. By allowing users to adjust the bid margin, the calculator shows the achievable landed margin under these constraints. This tool enables management to make informed decisions by forecasting the effect of lowering the bid margin, optimizing profitability within regulatory pricing limits.</p>
+
+        <p><strong>Key Insights:</strong></p>
+        <ul>
+            <li><strong>Optimizes Profitability Within Pricing Constraints</strong>
+                <ul>
+                    <li><p>The tool helps management identify optimal margin settings that maximize profitability while staying within the 20% freight charge cap, ensuring compliance with pricing constraints.</p></li>
+                </ul>
+            </li>
+            <li><strong>Informed Decision-Making</strong>
+                <ul>
+                    <li><p>By forecasting the effect of different margin levels, the tool supports more informed and strategic decision-making, empowering management to adjust pricing based on detailed margin analysis.</p></li>
+                </ul>
+            </li>
+            <li><strong>Addresses Margin Limitations Impact</strong>
+                <ul>
+                    <li><p>The calculator directly addresses the impact of the 20% freight margin cap, showing how high-margin bids (like 70%) might reduce effective landed margins and offering alternatives for better profitability.</p></li>
+                </ul>
+            </li>
+            <li><strong>Identifies Cost-Effective Thresholds</strong>
+                <ul>
+                    <li><p>The tool identifies cost-effective thresholds for margin settings, helping management adjust pricing for the highest possible landed margin while complying with internal pricing policies.</p></li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>Skills and Tools Used:</strong></p>
+        <ul>
+            <li><strong>Excel Data Analysis</strong>
+                <ul>
+                    <li><p>Utilized Excel to process and analyze large sets of historical order data to calculate margin adjustments and determine their impact on landed margins.</p></li>
+                </ul>
+            </li>
+            <li><strong>Linear Functions and Regression Analysis</strong>
+                <ul>
+                    <li><p>Employed linear functions to model the relationship between margin adjustments and landed margin outcomes, providing accurate forecasts for different margin scenarios.</p></li>
+                </ul>
+            </li>
+            <li><strong>Data Management and Historical Analysis</strong>
+                <ul>
+                    <li><p>Managed and organized historical order data, enabling efficient analysis of past sales trends to predict future margin behaviors under various pricing rules.</p></li>
+                </ul>
+            </li>
+            <li><strong>Revenue and Cost Calculations</strong>
+                <ul>
+                    <li><p>Calculated revenue and associated costs by incorporating freight limits, ensuring the forecast accurately reflects potential revenue under specific margin conditions.</p></li>
+                </ul>
+            </li>
+            <li><strong>Pivot Tables and Data Visualization</strong>
+                <ul>
+                    <li><p>Created pivot tables to summarize key data points, and applied data visualization techniques (such as charts and graphs) to present margin adjustments and their impacts in a clear, actionable format.</p></li>
+                </ul>
+            </li>
+            <li><strong>Categorization and Conditional Formatting</strong>
+                <ul>
+                    <li><p>Used categorization to group orders based on their margin performance and applied conditional formatting to highlight key thresholds and exceptions that impact overall margin performance.</p></li>
+                </ul>
+            </li>
+            <li><strong>Data Validation and Forecast Modeling</strong>
+                <ul>
+                    <li><p>Implemented data validation techniques to ensure input accuracy and applied forecasting models to predict the impact of different margin adjustments on profitability.</p></li>
+                </ul>
+            </li>
+        </ul>
+
+        <a href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/landed_margin_forecasting_tool">View Project</a>
+    </section>
+
+
+<!--                                                                 START OF PROJECT 2 CODE                                                                                        -->
+
+
+    <section id="company_vs_3rd_party_freight_model">
+        <h3>Project 2: Company vs. 3rd Party Freight Model</h3>
+
+        <p><strong>Description:</strong> The Company vs. 3rd Party Freight Model evaluates the potential cost savings of hiring in-house drivers compared to relying solely on third-party carriers. Using a combination of internal order data and public datasets, this analysis estimates the per-mile cost for company-managed freight by factoring in additional expenses for in-house drivers, such as wages, benefits, fuel, and lodging. 
+
+            To support this analysis, Brandon accessed a massive dataset from the Bureau of Economic Research, containing 30+ billion rows of distance data between U.S. zip codes. He developed a custom script to filter this data to include only the relevant zip code (55060), enabling him to calculate delivery distances and compare per-mile costs charged by third-party carriers in various states. Factoring in costs unique to operating in-house, such as vehicle maintenance, fuel consumption, and driver lodging, the model projected annual savings of approximately $239,000, with potential savings exceeding $500,000 when accounting for variable factors.</p>
+
+        <p><strong>Key Insights:</strong></p>
+        <ul>
+            <li><strong>Significant Annual Savings Potential</strong>
+                <ul>
+                    <li><p>The analysis revealed a potential annual savings of $239,000 by hiring in-house drivers, with additional variable factors suggesting total savings could exceed $500,000.</p></li>
+                </ul>
+            </li>
+            <li><strong>Cost per Mile Comparison</strong>
+                <ul>
+                    <li><p>Comparing per-mile costs for in-house drivers versus third-party carriers showed that managing freight internally could reduce expenses, especially with state-specific cost variations.</p></li>
+                </ul>
+            </li>
+            <li><strong>Value of External Data Integration</strong>
+                <ul>
+                    <li><p>External data, such as zip code distances from the Bureau of Economic Research, provided essential insights, proving that strategic data integration can reveal cost-saving opportunities.</p></li>
+                </ul>
+            </li>
+            <li><strong>Unquantified Savings Potential</strong>
+                <ul>
+                    <li><p>Additional potential savings from route optimization and improved scheduling control were identified, suggesting further cost benefits beyond the primary calculations.</p></li>
+                </ul>
+            </li>
+            <li><strong>Long-Term Strategic Impact</strong>
+                <ul>
+                    <li><p>Hiring in-house drivers could reduce reliance on third-party carriers, offering more control over delivery costs and enhancing strategic flexibility and cost stability.</p></li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>Skills and Tools Used:</strong></p>
+        <ul>
+            <li><strong>Data Sourcing and Extraction</strong>
+                <ul>
+                    <li><p>Used external data sources like the Bureau of Economic Research to obtain large-scale zip code distance data. A custom Python script was written to extract relevant data for the Owatonna, MN zip code, making it manageable for analysis.</p></li>
+                </ul>
+            </li>
+            <li><strong>Cost Analysis and Modeling</strong>
+                <ul>
+                    <li><p>Conducted detailed cost modeling, factoring in expenses such as wages, fuel, benefits, and lodging for in-house drivers. This helped to accurately determine the per-mile cost for internal freight operations compared to third-party carriers.</p></li>
+                </ul>
+            </li>
+            <li><strong>Data Cleansing and Transformation</strong>
+                <ul>
+                    <li><p>Cleaned and structured raw data from external sources to ensure it was usable in Excel, facilitating accurate calculation of distances and costs. Data transformation allowed for meaningful analysis and comparison of costs.</p></li>
+                </ul>
+            </li>
+            <li><strong>Python Scripting for Data Processing</strong>
+                <ul>
+                    <li><p>Developed a custom Python script to filter a massive dataset of 30+ billion rows. The script extracted the necessary data points relevant to the analysis, allowing for efficient processing without overloading Excel.</p></li>
+                </ul>
+            </li>
+            <li><strong>Excel Analysis and Calculations</strong>
+                <ul>
+                    <li><p>Used advanced Excel functions to calculate key metrics like cost per mile, potential savings, and cost comparisons. Excel’s built-in formulas and data visualization tools provided clarity for decision-making.</p></li>
+                </ul>
+            </li>
+            <li><strong>Economic and Regional Data Integration</strong>
+                <ul>
+                    <li><p>Incorporated regional economic data, such as fuel prices and labor costs from Minnesota State websites, to make the analysis region-specific and ensure more accurate cost predictions for in-house operations.</p></li>
+                </ul>
+            </li>
+        </ul>
+
+        <a href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/company_vs_3rd_party_freight_model">View Project</a>
+    </section>
+
+
+
+<!--                                                                 START OF PROJECT 3 CODE                                                                                        -->
+
+
+    <section id="cost_optimization_for_installation_operations">
+        <h3>Project 3: Cost Optimization for Installation Operations: In-House vs. Third-Party</h3>
+        <p><strong>Description:</strong> The Cost Optimization for Installation Operations project aimed to determine whether the company would benefit from hiring its own installers within a specific state or continue using third-party installers. The analysis relied on existing order revenue data and third-party installation costs, including travel expenses.</p>
+        
+        <p>Since the company did not track line-item costs per order, statistical sampling was applied to estimate travel expenses incurred by third-party installers. Using Power BI, a heatmap was created to identify "hot spots" for installations over the past three years, enabling a geographic analysis of where hiring local installers could yield the most savings.</p>
+        
+        <p>To further assess the viability of in-house installation, data from the Bureau of Economic Research was utilized to calculate travel distances for each order, factoring in hot spot locations. With travel costs reduced, the project then considered the additional expenses of hiring unionized installers, including benefit costs and unemployment taxes.</p>
+        
+        <p>Despite a potentially more efficient logistical model with in-house workers, the analysis revealed that hiring local installers would result in a net loss of $174,000 annually. Consequently, the company decided to continue its current model of using third-party installation services.</p>
+
+        <p><strong>Key Insights:</strong></p>
+        <ul>
+            <li><strong>Travel Costs as a Key Factor</strong>
+                <ul>
+                    <li><p>The analysis identified that travel expenses for third-party installers were a significant contributor to overall costs, and hiring local installers could reduce these expenses.</p></li>
+                </ul>
+            </li>
+            <li><strong>Heatmap Analysis</strong>
+                <ul>
+                    <li><p>Power BI's heatmap visualization of installation data allowed for geographic identification of "hot spots," highlighting areas where local installation would lead to the greatest cost savings.</p></li>
+                </ul>
+            </li>
+            <li><strong>Cost Trade-offs</strong>
+                <ul>
+                    <li><p>While hiring local union installers would reduce travel costs, their higher hourly wages and union benefits created an overall higher cost structure, negating the travel savings.</p></li>
+                </ul>
+            </li>
+            <li><strong>Financial Impact</strong>
+                <ul>
+                    <li><p>The analysis revealed a net loss of $174,000 per year if the company switched to an in-house installation model, emphasizing the importance of thorough cost-benefit analysis when evaluating operational changes.</p></li>
+                </ul>
+            </li>
+            <li><strong>Third-Party Model Stability</strong>
+                <ul>
+                    <li><p>The conclusion to remain with the third-party installation model was based on a clear financial understanding of the trade-offs, validating the current operational approach.</p></li>
+                </ul>
+            </li>
+        </ul>
+        
+
+<!--                                                                 START OF ADDITIONAL PROJECTS CODE                                                                              -->
+
+
+
+    <section id="additional-projects">
+        <h3>Additional Projects</h3>
+        <ul>
+            <li><a href="additional_projects/customer_order_volume_index.html">Customer Order Volume Forecast HeatMap</a></li>
+            <li><a href="additional_projects/technology_trends_dashboard/tech_trends_index.html">View Technology Trends Dashboard</a></li>
+            <li><a href="additional_projects/3rd_party_installer_onboard/3rd_party_installer_onboard_index.html">3rd Party Installer Onboarding Documentation</a></li>
+        </ul>
+    </section>
+
+
+    <!--                                                                 START OF SKILLS/TOOLS CODE                                                                                     -->
+
+    <section id="skills-tools">
+        <h3>Skills and Tools Used</h3>
+        <ul>
+            <li><strong>Power BI</strong>
+                <ul>
+                    <li><p>Used for data visualization and analysis, including creating heatmaps to forecast customer order volume and identify resource gaps across installation and delivery-only shipments.</p></li>
+                </ul>
+            </li>
+            <li><strong>Python Programming (Pandas, NumPy, Matplotlib, Folium)</strong>
+                <ul>
+                    <li><p>Utilized for data processing, statistical forecasting, and visualizing data through heatmaps. Applied Python libraries to manipulate large datasets and create geospatial analyses of delivery and installation resources.</p></li>
+                </ul>
+            </li>
+            <li><strong>Forecasting and Predictive Analytics</strong>
+                <ul>
+                    <li><p>Applied statistical forecasting methods to predict customer order volumes and delivery needs over the next two years, helping to inform resource allocation and logistics strategies.</p></li>
+                </ul>
+            </li>
+            <li><strong>Data Visualization (Heatmaps, Power BI, Python Libraries)</strong>
+                <ul>
+                    <li><p>Created and visualized customer order volume forecasts using heatmaps in Power BI and Python, enabling the team to identify trends and make data-driven decisions on resource management.</p></li>
+                </ul>
+            </li>
+            <li><strong>Geospatial Analysis (Resource Gap Identification, Territory Optimization)</strong>
+                <ul>
+                    <li><p>Employed geospatial analysis to map installation resources and identify areas of potential gaps in coverage, guiding planning for staffing and equipment allocation.</p></li>
+                </ul>
+            </li>
+            <li><strong>Scenario Modeling and Projections</strong>
+                <ul>
+                    <li><p>Developed scenario models to evaluate different delivery and installation strategies, predicting their impact on cost, resource utilization, and overall logistics efficiency.</p></li>
+                </ul>
+            </li>
+            <li><strong>Cost Modeling and Optimization</strong>
+                <ul>
+                    <li><p>Created models to analyze and optimize costs associated with delivery and installation, identifying cost-effective solutions for resource allocation and minimizing excess spending.</p></li>
+                </ul>
+            </li>
+            <li><strong>Cost-Benefit and Financial Analysis</strong>
+                <ul>
+                    <li><p>Performed detailed cost-benefit analysis to evaluate the financial impact of in-house versus third-party delivery models, helping to identify the most cost-effective strategy for the company.</p></li>
+                </ul>
+            </li>
+            <li><strong>Operational Process Improvement</strong>
+                <ul>
+                    <li><p>Streamlined operational processes by identifying inefficiencies in delivery and installation, leading to recommendations for improvements and optimization of resources.</p></li>
+                </ul>
+            </li>
+            <li><strong>Project Management (Design, Development, Testing, Deployment)</strong>
+                <ul>
+                    <li><p>Managed the development lifecycle of the Customer Order Volume Forecast Heatmap tool, overseeing design, implementation, testing, and deployment to ensure successful rollouts and user adoption.</p></li>
+                </ul>
+            </li>
+            <li><strong>Data Integration and Transformation (Order and Quote Data, Data Cleansing)</strong>
+                <ul>
+                    <li><p>Integrated multiple data sources, including order and quote data, and performed data transformation and cleansing to ensure accurate and reliable inputs for forecasting and analysis.</p></li>
+                </ul>
+            </li>
+            <li><strong>Strategic Planning and Decision Making</strong>
+                <ul>
+                    <li><p>Contributed to strategic decision-making by providing insights and forecasts on customer demand, resource allocation, and logistical planning, helping the company optimize operations.</p></li>
+                </ul>
+            </li>
+            <li><strong>Cross-Functional Collaboration (Sales, Operations, Logistics)</strong>
+                <ul>
+                    <li><p>Collaborated with Sales, Operations, and Logistics teams to align forecasting efforts with business needs, ensuring effective resource allocation and streamlined delivery operations.</p></li>
+                </ul>
+            </li>
+            <li><strong>Data-Driven Decision Making</strong>
+                <ul>
+                    <li><p>Supported data-driven decision-making by providing actionable insights through data analysis, helping the company make informed choices regarding installation and delivery strategies.</p></li>
+                </ul>
+            </li>
+            <li><strong>Research and Data Gathering</strong>
+                <ul>
+                    <li><p>Conducted thorough research and gathered relevant data to inform forecasting models, cost analysis, and resource optimization strategies, ensuring accuracy and relevance in all reports.</p></li>
+                </ul>
+            </li>
+            <li><strong>Problem Solving and Decision Making</strong>
+                <ul>
+                    <li><p>Utilized analytical tools to solve complex problems in delivery and installation planning, providing recommendations that balanced cost-effectiveness and resource needs.</p></li>
+                </ul>
+            </li>
+            <li><strong>Communication and Reporting (Stakeholder Communication, Executive-Level Presentations)</strong>
+                <ul>
+                    <li><p>Communicated complex analytical results to stakeholders at all levels, delivering clear and actionable insights through reports and executive-level presentations.</p></li>
+                </ul>
+            </li>
+            <li><strong>Cost Allocation</strong>
+                <ul>
+                    <li><p>Allocated costs across different business units and scenarios, ensuring accurate financial modeling for both in-house and third-party installation models.</p></li>
+                </ul>
+            </li>
+            <li><strong>Vendor and Supplier Management</strong>
+                <ul>
+                    <li><p>Managed relationships with third-party vendors and suppliers, ensuring that external resources were aligned with company goals and cost optimization strategies.</p></li>
+                </ul>
+            </li>
+            <li><strong>Risk Assessment and Mitigation</strong>
+                <ul>
+                    <li><p>Assessed risks related to delivery and installation operations, identifying potential challenges and developing mitigation strategies to reduce disruptions and costs.</p></li>
+                </ul>
+            </li>
+            <li><strong>Supply Chain Management (Logistics and Installations)</strong>
+                <ul>
+                    <li><p>Analyzed and optimized supply chain processes for delivery and installation, ensuring smooth operations and efficient allocation of resources.</p></li>
+                </ul>
+            </li>
+            <li><strong>Technical Writing and Documentation</strong>
+                <ul>
+                    <li><p>Produced detailed documentation, including technical reports and user guides, to support the deployment and understanding of analytical tools and forecasting models.</p></li>
+                </ul>
+            </li>
+            <li><strong>Training Development</strong>
+                <ul>
+                    <li><p>Developed training materials to educate teams on the use of analytical tools and processes, ensuring the effective adoption of new systems and methods across departments.</p></li>
+                </ul>
+            </li>
+            <li><strong>Collaboration Tools</strong>
+                <ul>
+                    <li><p>Utilized collaboration tools to facilitate communication and project management across teams, ensuring alignment and timely execution of data analysis projects.</p></li>
+                </ul>
+            </li>
+            <li><strong>Knowledge Management</strong>
+                <ul>
+                    <li><p>Developed and maintained a knowledge management system to track insights, lessons learned, and best practices from analytics projects, ensuring continuous improvement in analytical efforts.</p></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+
+
+<!--                                                                 START OF ABOUT ME CODE                                                                                         -->
+
+
+      <section id="about-me">
+        <h5>About Me</h5>
+        <ul>
+            <li><strong>Email</strong>: <a href="mailto:brandonalbers@msn.com">brandonalbers@msn.com</a></li>
+            <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/brandon-albers-85ab293b" target="_blank">Brandon Albers</a></li>
+            <li><strong>GitHub</strong>: <a href="https://github.com/Albers1991" target="_blank">@Albers1991</a></li>
+        </ul>
+    </section>
+
+
+<!--                                                                 START OF LICENSE CODE                                                                                          -->
+
+
+
+
+    <footer>
+        <p><a href="/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/License">License</a></p>
+    </footer>
+</body>
+</html>
+
+</html>

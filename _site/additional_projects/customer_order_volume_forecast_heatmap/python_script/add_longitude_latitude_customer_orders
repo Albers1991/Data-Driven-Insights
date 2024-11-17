@@ -1,0 +1,108 @@
+##################################################################################################################################################################################
+#                                        Command Prompt Start message
+##################################################################################################################################################################################
+import logging
+logging.basicConfig(filename='script_errors.log', level=logging.ERROR)
+
+try:
+    print("Script is running...")
+
+    import time
+    import requests  # Adding requests library for Google API
+
+    # Track the start time for script execution
+    start_time = time.time()
+
+    ##################################################################################################################################################################################
+    #                                        Libraries being Used
+    ##################################################################################################################################################################################
+
+    import pandas as pd
+    from openpyxl import Workbook
+
+    ##################################################################################################################################################################################
+    #                                        Information for myself
+    ##################################################################################################################################################################################
+    # input_file1 refers to the original excel that was randomly generated with previous script
+
+    ##################################################################################################################################################################################
+    #                                        Google Maps Geocoding API Setup
+    ##################################################################################################################################################################################
+    api_key = 'MY_API_KEY'  # My Google Maps Geocoding API key
+
+    # Define functions to get latitude and longitude using Google API
+    def get_latitude(zip_code):
+        try:
+            zip_code_str = str(zip_code)  # Ensure ZIP code is in string format
+            url = f"https://maps.googleapis.com/maps/api/geocode/json?address={zip_code_str}, USA&key={api_key}"
+            response = requests.get(url)
+
+            if response.status_code == 200:
+                result = response.json().get('results')
+                if result:
+                    return result[0]['geometry']['location']['lat']  # latitude
+                else:
+                    logging.error(f"No result found for ZIP: {zip_code_str}")
+                    return None
+            else:
+                logging.error(f"Failed to fetch data for {zip_code_str}: HTTP {response.status_code}")
+                return None
+        except Exception as e:
+            logging.error(f"Error occurred for {zip_code_str}: {e}")
+            return None
+
+    def get_longitude(zip_code):
+        try:
+            zip_code_str = str(zip_code)  # Ensure ZIP code is in string format
+            url = f"https://maps.googleapis.com/maps/api/geocode/json?address={zip_code_str}, USA&key={api_key}"
+            response = requests.get(url)
+
+            if response.status_code == 200:
+                result = response.json().get('results')
+                if result:
+                    return result[0]['geometry']['location']['lng']  # longitude
+                else:
+                    logging.error(f"No result found for ZIP: {zip_code_str}")
+                    return None
+            else:
+                logging.error(f"Failed to fetch data for {zip_code_str}: HTTP {response.status_code}")
+                return None
+        except Exception as e:
+            logging.error(f"Error occurred for {zip_code_str}: {e}")
+            return None
+
+    ##################################################################################################################################################################################
+    #                                        Converting Zips to Longitude/Latitude Code Beginning
+    ##################################################################################################################################################################################
+    # Load the Excel file
+    input_file1 = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/data/customer_orders.xlsx"
+    df = pd.read_excel(input_file1)
+
+    # Apply a delay due to Google Geocode API's rate limits and create two new columns with these coordinates for new workbook
+    df['Latitude'] = df['Zip Code'].apply(lambda x: get_latitude(x) if x else None)
+    time.sleep(1.5)  # delay for each request
+    df['Longitude'] = df['Zip Code'].apply(lambda x: get_longitude(x) if x else None)
+    time.sleep(1.5)  # delay for each request
+
+    # Debug: Check if the new columns are added
+    print("Latitude and Longitude columns added:")
+    print(df[['Zip Code', 'Latitude', 'Longitude']].head())  # Print first few rows
+
+    # Save the new data to a new Excel Worksheet
+    output_file1 = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/data/script_output/long_lat_customer_orders.xlsx"
+    df.to_excel(output_file1, index=False)
+
+    print(f"Updated file saved as {output_file1}")
+
+    ##################################################################################################################################################################################
+    #                                        Command Prompt End message
+    ##################################################################################################################################################################################
+    print("Script has finished executing.") 
+
+    # Track the end time for script execution
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print(f"Execution time: {execution_time} seconds")
+
+except Exception as e:
+    logging.error(f"An Error Occured: {e}")

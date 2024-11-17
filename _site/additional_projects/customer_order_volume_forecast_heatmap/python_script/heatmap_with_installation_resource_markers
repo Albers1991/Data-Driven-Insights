@@ -1,0 +1,86 @@
+##################################################################################################################################################################################
+#                                        Command Prompt Start message
+##################################################################################################################################################################################
+import logging
+logging.basicConfig(filename='script_errors.log', level=logging.ERROR)
+
+try:
+    print("Script is running...")
+
+    import time
+
+    import folium
+    from folium.plugins import HeatMap
+
+    import pandas as pd
+    from openpyxl import Workbook
+
+    # Track the start time for script execution
+    start_time = time.time()
+
+    ##################################################################################################################################################################################
+    #                                        Information for myself
+    ##################################################################################################################################################################################
+    
+    # file_path1 refers to the location of where output_file1 from previous script run gets saved
+
+    ##################################################################################################################################################################################
+    #                                        Heat Map Code Beginning
+    ##################################################################################################################################################################################
+
+    # File path for the Excel file that Geopy will output with the Longitude and Latitude
+    file_path1 = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/data/script_output/long_lat_customer_orders.xlsx"
+
+    # Load the excel file
+    df = pd.read_excel(file_path1)
+
+    # List of locations with coordinates for markers for our installer resources in the USA
+    locations = [
+        {"name": "Timothy Scott - Buffalo, NY", "lat": 42.8864, "lon": -78.8784},  # Buffalo, NY
+        {"name": "Sandra Murphy - Denver, CO", "lat": 39.7392, "lon": -104.9903},  # Denver, CO
+        {"name": "David Reed - Orlando, FL", "lat": 28.5383, "lon": -81.3792},  # Orlando, FL
+        {"name": "Jessica Tatum - Houston, TX", "lat": 29.7604, "lon": -95.3698},  # Houston, TX
+        {"name": "Kevin Harris - Los Angeles, CA", "lat": 34.0522, "lon": -118.2437},  # Los Angeles, CA
+        {"name": "Emily Green - Seattle, WA", "lat": 47.6062, "lon": -122.3321},  # Seattle, WA
+        {"name": "James Johnson - Chicago, IL", "lat": 41.8781, "lon": -87.6298},  # Chicago, IL
+    ]
+
+    # Ensure the dataframe has 'Latitude' and 'Longitude' columns
+    if 'Latitude' in df.columns and 'Longitude' in df.columns:
+        # Create a base map centered on the U.S.
+        m = folium.Map(location=[37.8, -96], zoom_start=4)
+
+        # Create data for the heatmap
+        heat_data = df[['Latitude', 'Longitude']].dropna().values.tolist()
+
+        # Add a heatmap layer
+        HeatMap(heat_data).add_to(m)
+
+        # Add a layer for markers for each specific installer location
+        for loc in locations:
+            folium.Marker(
+                location=[loc["lat"], loc["lon"]],
+                popup=loc["name"],
+                icon=folium.Icon(color="blue", icon="info-sign")
+            ).add_to(m)
+
+        # Save the map to an HTML file
+        output_map_path = r"https://albers1991.github.io/Data-Driven-Insights-Business-Operations-Analysis-Portfolio/additional_projects/customer_order_volume_forecast_heatmap/heatmap/customer_order_density_heatmap_usa_with_installation_resource_markers.html"
+        m.save(output_map_path)
+
+        print(f"Heatmap with markers saved to {output_map_path}")
+    else:
+        print("Error: 'Latitude' and 'Longitude' columns are not found in the Excel file.")
+
+    ##################################################################################################################################################################################
+    #                                        Command Prompt End message
+    ##################################################################################################################################################################################
+    print("Script has finished executing.") 
+
+    # Track the end time for script execution
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print(f"Execution time: {execution_time} seconds")
+
+except Exception as e:
+    logging.error(f"An Error Occurred: {e}")
