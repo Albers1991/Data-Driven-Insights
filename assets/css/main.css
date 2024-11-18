@@ -13,3 +13,20 @@
     font-size: 1.1rem;
     text-align: center;
 }
+
+
+/* Reduce space between list items */
+#skills-tools ul {
+    margin: 0; /* Remove margin from <ul> */
+    padding: 0; /* Remove padding from <ul> */
+}
+
+/* Adjust spacing between list items */
+#skills-tools li {
+    margin-bottom: 5px; /* Add a small space between <li> elements */
+}
+
+/* Optional: To further reduce space within nested lists */
+#skills-tools li ul li {
+    margin-bottom: 3px; /* Space for nested <li> elements */
+}
