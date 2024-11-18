@@ -1,8 +1,8 @@
 title: "Brandon Albers - Data, Business, and Operations Analyst Portfolio"
 description: "A showcase of my skills and projects in data analysis and business operations."
 
-# Use the Hyde theme from GitHub
-remote_theme: jekyll-theme-hyde
+# Use the default Jekyll theme
+theme: jekyll-theme-hyde
 
 url: "https://albers1991.github.io"  # The base URL for the site
 baseurl: ""  # The relative base URL for the repository
