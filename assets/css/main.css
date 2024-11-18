@@ -28,5 +28,5 @@
 
 /* Optional: To further reduce space within nested lists */
 #skills-tools li ul li {
-    margin-bottom: 3px; /* Space for nested <li> elements */
+    margin-bottom: 0; /* Space for nested <li> elements */
 }
