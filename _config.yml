@@ -1,8 +1,8 @@
 title: "Brandon Albers - Data, Business, and Operations Analyst Portfolio"
 description: "A showcase of my skills and projects in data analysis and business operations."
 
-# Use the Hyde theme from GitHub
-remote_theme: poole/hyde
+# Use the Hyde theme from GitHub 
+theme: jekyll-theme-hyde
 
 url: "https://albers1991.github.io"  # The base URL for the site
 baseurl: "/Data-Driven-Insights-Business-Operations-Analysis-Portfolio"  # The relative base URL for the repository
@@ -15,4 +15,4 @@ plugins:
 # Asset settings
 assets:
   css:
-    - "/assets/css/main.css"  # Ensure the path aligns with your site structure
+    - "assets/css/main.css"  # Ensure the path aligns with your site structure
