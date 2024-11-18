@@ -23,7 +23,7 @@
 
 /* Adjust spacing between list items */
 #skills-tools li {
-    margin-bottom: 5px; /* Add a small space between <li> elements */
+    margin-bottom: 0; /* Add a small space between <li> elements */
 }
 
 /* Optional: To further reduce space within nested lists */
