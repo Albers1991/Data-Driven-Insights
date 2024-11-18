@@ -13,32 +13,3 @@
     font-size: 1.1rem;
     text-align: center;
 }
-
-
-
-/* Styling for the navigation menu's in each project */
-.menu {
-    list-style-type: none; /* Removes bullet points */
-    display: flex; /* Makes it a horizontal menu */
-    padding: 0;
-    margin: 0;
-    background-color: #333; /* Dark background color */
-}
-
-.menu li {
-    flex: 1; /* Evenly spaces out menu items */
-    text-align: center;
-}
-
-.menu li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px; /* Padding around the text */
-    font-weight: bold;
-}
-
-.menu li a:hover {
-    background-color: #555; /* Change background on hover */
-    color: #ffdd57; /* Optional: Highlight color on hover */
-}
